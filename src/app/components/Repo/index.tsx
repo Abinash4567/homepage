@@ -55,32 +55,32 @@ const data = [
 
 export default function Repo(){
   return(
-    <div className="w-full">
+    <div className="w-full hover:cursor-pointer">
       <div>
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex items-center justify-between p-3 border-t hover:bg-slate-100 hover:cursor-pointer">
+            className="flex items-center justify-between p-2 sm:p-3 border-t hover:bg-slate-100 hover:cursor-pointer">
             <div>
               <div className="flex items-center gap-2">
-                <h3 className="text-lg font-medium text-black">{item.name}</h3>
+                <h3 className="text-sm sm:text-lg font-medium text-black">{item.name}</h3>
                 <span
-                  className="text-xs px-2 py-0.5 rounded-xl bg-blue-100 text-blue-500 border border-blue-500">
+                  className="text-xs px-2 sm:py-0.5 rounded-xl bg-blue-100 text-blue-500 border border-blue-500">
                   {item.visibility}
                 </span>
               </div>
               <div className="flex">
                 <div className="flex">
-                  <p className="text-sm text-gray-700 mr-2">{item.tech}</p>
+                  <p className="text-xs sm:text-sm text-gray-700 mr-2">{item.tech}</p>
                   <div className="bg-blue-600 w-2 h-2 rounded-full mt-[6px]"></div>
                 </div>
 
               <div className="ml-10 flex">
                 <Database color="#181616" size={13} className="mt-[4px]"/>
-                <p className="text-sm text-gray-700 mr-2 ml-1">{item.size}</p>
+                <p className="text-xs sm:text-sm text-gray-700 mr-2 ml-1">{item.size}</p>
               </div>
 
-                <p className="text-sm text-gray-700 ml-6">Updated {item.updated}</p>
+                <p className="text-xs sm:text-sm text-gray-700 ml-6">Updated {item.updated}</p>
               </div>
             </div>
           </div>
