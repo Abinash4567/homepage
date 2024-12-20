@@ -11,7 +11,7 @@ import { MoveUp } from "lucide-react";
 const saaslogin = [
   { name: "Github", logo: "/Github.png" },
   { name: "Bitbucket", logo: "/Bitbucket.png" },
-  { name: "Azure Devops", logo: "/Azure.png" },
+  { name: "Azure Devops", logo: "/Azure Devops.png" },
   { name: "GitLab", logo: "/Gitlab.png" },
 ];
 
